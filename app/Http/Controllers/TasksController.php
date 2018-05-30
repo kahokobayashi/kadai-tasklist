@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Message;    // add
+use App\Task;    // add
 
 class TasksController extends Controller
 {
@@ -17,7 +17,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $task = Task::all();
+        $tasks = Task::all();
 
         return view('tasks.index', [
             'tasks' => $tasks,
@@ -61,7 +61,7 @@ class TasksController extends Controller
      */
    public function show($id)
     {
-        $message = Task::find($id);
+        $task = Task::find($id);
 
         return view('tasks.show', [
             'task' => $task,
