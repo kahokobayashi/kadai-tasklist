@@ -12,6 +12,5 @@
         </ul>
     @endif
 
-    {!! link_to_route('tasks.create', '新規メッセージの投稿') !!}
-
-@endsection
+    {!! link_to_route('tasks.create', '新規タスクリストの投稿') !!}
+　　@endsection
