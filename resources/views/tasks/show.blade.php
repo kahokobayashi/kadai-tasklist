@@ -2,6 +2,8 @@
 
 @section('content')
 
+<h1>id = {{ $task->id }} のタスクリスト詳細ページ</h1>
+
     <table class="table table-bordered">
         <tr>
             <th>id</th>
